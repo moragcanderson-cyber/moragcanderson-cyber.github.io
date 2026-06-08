@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morag Anderson poetry</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+            If you include the next line in all your web pages, they will all share the same look.
+            This makes it easier to make new pages for your site. test-->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    {% if page.extra_css %}
+      {{ page.extra_css }}
+    {% endif %}
+    </head>
+
+<body>
+    <div class="topnav">
+        <a href="/index.html">Home</a>
+        <a href="/writing.html">Writing</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    <div class="content">
+      {{ content }}
+    </div>
+</body>
+</html>
